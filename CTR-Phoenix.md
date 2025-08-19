@@ -83,7 +83,7 @@ public static final TalonFX m_motor = new TalonFX(0);
 
 ## Download
 
-* Vendordep: `https://maven.ctr-electronics.com/release/com/ctre/phoenix6/latest/Phoenix6-25.90.0-alpha-12json`
+* Vendordep: `https://maven.ctr-electronics.com/release/com/ctre/phoenix6/latest/Phoenix6-25.90.0-alpha-2.json`
 
 * Firmware: Tuner -> For the year dropdown select `2027-alpha-1` -> Firmware will be automatically populated
 
