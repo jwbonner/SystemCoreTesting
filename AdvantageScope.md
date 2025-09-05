@@ -1,6 +1,6 @@
 # AdvantageScope 2027 Alpha
 
-**Downloads for the 2027 alpha releases of AdvantageScope can be found [here](https://github.com/Mechanical-Advantage/AdvantageScope/releases).** The changelog below lists the available releases along with related compatibility information. Note that many changes included in the 2027 alpha are also available in the 2026 beta (see [What's New in 2026?](https://docs.advantagescope.org/whats-new)). See also the [known issues](#known-issues) section below.
+**Downloads for the 2027 alpha releases of AdvantageScope can be found [here](https://github.com/Mechanical-Advantage/AdvantageScope/releases) (find the first release with version v27.0.0-alpha-X).** The changelog below lists the available releases along with related compatibility information. Note that many changes included in the 2027 alpha are also available in the 2026 beta (see [What's New in 2026?](https://docs.advantagescope.org/whats-new)). See also the [known issues](#known-issues) section below.
 
 ### [v27.0.0-alpha-4](https://github.com/Mechanical-Advantage/AdvantageScope/releases/tag/v27.0.0-alpha-4)
 
