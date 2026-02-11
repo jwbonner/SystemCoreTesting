@@ -20,7 +20,12 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 [2027 Alpha 2 WPILib Installer]( https://packages.wpilib.workers.dev/installer/v2027.0.0-alpha-2/)
 
-[Limelight Hardware Manager 2.0.6](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_6.exe)
+[Limelight Hardware Manager 2.0.6 - WINDOWS](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_6.exe)
+
+[Limelight Hardware Manager 2.0.6 - APPLE SILICON MAC (Apple M1-M5)](https://downloads.limelightvision.io/software/LimelightHardwareManager-macOS-AppleSilicon2_0_6.dmg)
+
+[(BETA) Limelight Hardware Manager 2.0.6 - INTEL MAC](https://downloads.limelightvision.io/software/LimelightHardwareManager-macOS-Intel2_0_6.dmg)
+
 
 [OS Releases, Toolchain, Package Examples, Cross-Compilation Examples](https://github.com/LimelightVision/systemcore-os-public)
 
