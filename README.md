@@ -18,7 +18,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 ### Tooling
 
-[2027 Alpha 2 WPILib Installer]( https://packages.wpilib.workers.dev/installer/v2027.0.0-alpha-2/)
+[2027 Alpha 5 WPILib Installer]( https://packages.wpilib.workers.dev/installer/v2027.0.0-alpha-5/)
 
 [Limelight Hardware Manager 2.0.7 - WINDOWS](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_7.exe)
 
@@ -159,7 +159,7 @@ Release 157 selects a default Wi-Fi channel. This is causing issues in some envi
 
 1. Boot and establish connectivity with your Systemcore.
 2. Ensure WPILIB 2027 has been installed.
-3. Open '2027_alpha1 WPILib VS Code' 
+3. Open '2027_alpha5 WPILib VS Code' 
 4. Make a new WPILib project as you normally would, and make sure to set the correct team number during the project creation step.
 5. Deploy the project as you normally would.
 6. The NI DriverStation should reflect the presence of robot code.
