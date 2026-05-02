@@ -32,11 +32,11 @@ Figure 1 - Hybrid System Block Diagram. Created with Gemini
 Power can be chained through additional Expansion Hubs if needed before ending with Systemcore, though it is recommended to start with a single Expansion Hub to keep things simple while working on initial bring-up of the system. Additional Expansion Hubs would each connect to a unique Systemcore USB port for data transfer.
 
 #### WPILib Installation
-The Systemcore control system will use WPILib as the base library infrastructure across both FTC and FRC. WPILib and its dedicated copy of the VSCode IDE can be installed on Windows, Mac or Linux using these instructions.
+The Systemcore control system will use WPILib as the base library infrastructure across both FTC and FRC. WPILib and its dedicated copy of the VSCode IDE can be installed on Windows, Mac or Linux. Download the latest alpha release using the link in the [Tooling section of the Readme on this repo](https://github.com/wpilibsuite/SystemcoreTesting#tooling) then intall using [these instructions](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html).
 #### Systemcore Configuration
-1. Download and install the Limelight Hardware Manager for your platform from the appropriate link on the GitHub page.
-2. Using a USB-C cable plugged into Systemcore, flash the latest available OS update using the Flashing instructions. Your unit is a Beta unit so make sure to select the appropriate Beta OS.
-3. Still using the USB connection, you can now access the Systemcore via webbrowser and configure the team number and WiFi.
+1. Download and install the Limelight Hardware Manager for your platform from the appropriate [link on the GitHub page](https://github.com/wpilibsuite/SystemcoreTesting/tree/main#tooling).
+2. Using a USB-C cable plugged into Systemcore, flash the latest available OS update using the [Flashing instructions](https://github.com/wpilibsuite/SystemcoreTesting/tree/main#flash-mode). Your unit is a Beta unit so make sure to select the appropriate Beta OS.
+3. Still using the USB connection, you can now access the Systemcore via webbrowser and [configure the team number and WiFi](https://github.com/wpilibsuite/SystemcoreTesting/tree/main#accessing-the-web-interface-and-setting-your-team-number).
 4. You may wish to verify that you can now connect to Systemcore wirelessly and access it via a web browser.
 #### Driver Station installation
 A solution for controlling Systemcore using Driver Hub is still in development and is still expected to be the only legal control method at events. In the meantime, you will need to use a PC application to control the robot. Download the release for your platform from the [Driver Station Releases page](https://github.com/wpilibsuite/FirstDriverStation-Public/releases/). For Windows, run the installer and follow the instructions. For other platforms, see the installation notes in the [Readme](https://github.com/wpilibsuite/FirstDriverStation-Public).
