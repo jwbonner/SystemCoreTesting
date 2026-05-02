@@ -71,7 +71,8 @@ Do not use both power inputs (Bridge + Weidmuller) simultaneously.
 
 ### Flash Mode
 
-If the USBC-port is attached before power is applied, Systemcore will boot into flash mode.
+For Alpha units, if the USBC-port is attached before power is applied, Systemcore will boot into flash mode.
+For Beta units, hold down the Config button while powering the unit with USB connected to boot Systemcore into flash mode.
 
 ### Flashing OS Updates
 Update to the latest stable Alpha release to get started.
@@ -80,11 +81,11 @@ Update to the latest stable Alpha release to get started.
 <details>
 <summary>Flashing OS Updates (Windows)</summary>
 
-1. Download the latest release from the [systemcore-os-public repository](https://github.com/LimelightVision/systemcore-os-public)
-2. Make sure the new [Limelight Hardware Manager 2.0.1](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_1.exe) is installed
+1. Download the latest release from the [systemcore-os-public repository](https://github.com/LimelightVision/systemcore-os-public) Make sure to grab the correct one for your hardware revision (alpha or beta).
+2. Make sure the latest Limelight Hardware Manager is installed (see Tooling above)
 3. Open Limelight Hardware Manager
 3. Navigate to the Flash OS Tab
-4. Boot Systemcore into Flash Mode (see 'power' section above). You should see activity in the log window. If you don't see anything, click the 'reinstall drivers' button at .
+4. Boot Systemcore into Flash Mode (see 'Flash Mode' section above). You should see activity in the log window. If you don't see anything, click the 'reinstall drivers' button at .
 5. Select an OS .zip or .img to flash. Wait for extraction to complete.
 6. Refresh drives and select the one marked as Limelight/Systemcore. 
 7. Click the “Flash” Button after it starts flashing.
