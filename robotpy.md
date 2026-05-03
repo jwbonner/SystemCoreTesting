@@ -5,7 +5,7 @@ RobotPy 2027
 
 Install Python, and then:
 
-    python3 -m pip install robotpy~=2027.0.0a2
+    python3 -m pip install robotpy~=2027.0.0a5.post1
 
 ### Deploy
 
@@ -20,4 +20,3 @@ Vendors have been removed from `robotpy_extras` in `pyproject.toml`. You must ad
 their pypi package names to the `requires` list instead. The following vendor
 packages are known to be available for 2027:
 
-* REV Robotics: `robotpy-rev`
