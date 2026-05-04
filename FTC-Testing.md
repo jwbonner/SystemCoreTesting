@@ -1,7 +1,7 @@
 # Systemcore FTC Alpha Instructions
 
 ## Introduction
-Thank you for volunteering to help us alpha test the new Systemcore, Motioncore, A301 and 18V battery systems. These systems represent a significant change from the hardware and software FTC teams are used to and, as an alpha test, we expect there to be bumps along the road. Some elements of the system, particularly software and documentation, are either not yet finished or are unpolished. We encourage you to share feedback on what feels like it’s missing, or areas where you are stuck or struggling. 
+Thank you for volunteering to help us alpha test the new Systemcore, Motioncore, A301 and 18V battery systems. These systems represent a significant change from the hardware and software FTC teams are used to and, as an alpha test, we expect there to be bumps along the road. Some elements of the system, particularly software and documentation, are either not yet finished or are unpolished. We encourage you to share feedback on what feels like it’s missing, or areas where you are stuck or struggling.
 This document links heavily into existing alpha and WPILib documentation in order to avoid repeating material already created. In many cases this existing material is not yet assembled into a cohesive workflow, especially for FTC teams, so it is recommended to refer to linked documents only to complete the steps described and then return to this document rather than proceeding to the next steps in the external reference.
 ## Testing Logistics
 The majority of testing communication moving forward will be handled via the GitHub project. This allows all students and mentors participating in testing to view any updates/communication directly rather than forcing a single contact into the position of forwarding e-mail communications. It also allows other members of the community not chosen to participate to follow along.
@@ -25,7 +25,7 @@ More general questions or discussion (e.g. “I was wondering about…” or “
 
 ## Task 1 – Hybrid Configuration Basic Testing
 #### Wiring
-The hybrid configuration allows teams to take advantage of the new technology in Systemcore while using familiar motors and batteries. This allows teams to spread out both the shock of learning a whole new system and investment in new components across multiple seasons. This configuration utilizes a current FTC battery connected to one or more Expansion Hubs in order to connect motors, servos and encoders. All other sensors connect to Systemcore which controls the Expansion Hubs over USB. 
+The hybrid configuration allows teams to take advantage of the new technology in Systemcore while using familiar motors and batteries. This allows teams to spread out both the shock of learning a whole new system and investment in new components across multiple seasons. This configuration utilizes a current FTC battery connected to one or more Expansion Hubs in order to connect motors, servos and encoders. All other sensors connect to Systemcore which controls the Expansion Hubs over USB.
 <img width="975" height="354" alt="System Diagram of hybrid configuration" src="https://github.com/user-attachments/assets/97420d13-6965-4037-9337-a04ce020e1eb" />
 Figure 1 - Hybrid System Block Diagram. Created with Gemini
 
@@ -46,9 +46,9 @@ A solution for controlling Systemcore using Driver Hub is still in development a
 1. You may also wish to disconnect the USB and connect to the Systemcore Wifi to verify DS connection over WiFi before proceeding.
 
 #### First example program
-We’ll be working on resources for understanding WPILib and differences with the FTC SDK shortly, but first we want to deploy a simple sample program to verify that everything is configured and wired correctly. 
-1. Follow the directions [on this page](https://docs.wpilib.org/en/2027/docs/zero-to-robot/step-4/creating-test-drivetrain-program-cpp-java-python.html#deploying-the-project-to-a-robot) to create your sample program, with the exception of selecting Expansion Hub Sample instead of Getting Started and stopping once you have the project open. The rest of the page describes the Getting Started sample program and is not applicable to this test. 
-1. Once you’ve created and opened the project, use [these instructions](https://docs.wpilib.org/en/2027/docs/software/vscode-overview/deploying-robot-code.html#building-and-deploying-robot-code) to deploy the project. 
+We’ll be working on resources for understanding WPILib and differences with the FTC SDK shortly, but first we want to deploy a simple sample program to verify that everything is configured and wired correctly.
+1. Follow the directions [on this page](https://docs.wpilib.org/en/2027/docs/zero-to-robot/step-4/creating-test-drivetrain-program-cpp-java-python.html#deploying-the-project-to-a-robot) to create your sample program, with the exception of selecting Expansion Hub Sample instead of Getting Started and stopping once you have the project open. The rest of the page describes the Getting Started sample program and is not applicable to this test.
+1. Once you’ve created and opened the project, use [these instructions](https://docs.wpilib.org/en/2027/docs/software/vscode-overview/deploying-robot-code.html#building-and-deploying-robot-code) to deploy the project.
 1. The program is set up to map each joystick axis (i.e. left stick X/Y + right stick X/Y) to one of the 4 motors on the Expansion Hub to test basic functionality.
 1. Open the Driver Station software, ensure your gamepad is detected by clicking the controller tab on the left side, set the mode to Teleop and click Enable.
 1. Each of the 4 joystick axes should control one of the 4 motor outputs of the Expansion Hub.
@@ -56,5 +56,8 @@ We’ll be working on resources for understanding WPILib and differences with th
 
 ## Task 2 – Hybrid Configuration Additional Testing
 The second task is to continue testing with the hybrid configuration using programs of your own. Using the classes in [org.wpilib.hardware.expansionhub](https://github.wpilib.org/allwpilib/docs/2027/java/org/wpilib/hardware/expansionhub/package-summary.html) to communicate with motors, encoders and servos connected to one or more Expansion Hubs, develop one or more programs to control a mechanism or robot.
+
+> [!TIP]
+> In the `org.wpilib.driverstation` package, you'll see gamepad classes prefixed `Ni...`. Do not use these classes, these are for the old FRC Driver Station. For the new 2027 Driver Station, use the `Gamepad` class, which has universal mappings for anything that shows up as a Gamepad in the Driver Station.
 
 ## More info on Blocks and A301 Testing coming soon!
