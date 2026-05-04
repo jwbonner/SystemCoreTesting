@@ -57,6 +57,8 @@ We’ll be working on resources for understanding WPILib and differences with th
 ## Task 2 – Hybrid Configuration Additional Testing
 The second task is to continue testing with the hybrid configuration using programs of your own. Using the classes in [org.wpilib.hardware.expansionhub](https://github.wpilib.org/allwpilib/docs/2027/java/org/wpilib/hardware/expansionhub/package-summary.html) to communicate with motors, encoders and servos connected to one or more Expansion Hubs, develop one or more programs to control a mechanism or robot.
 
+Multiple Expansion Hubs can be connected to Systemcore, with each connected to it's own USB port. RS485 connection between Expansion Hubs is not supported.
+
 > [!TIP]
 > In the `org.wpilib.driverstation` package, you'll see gamepad classes prefixed `Ni...`. Do not use these classes, these are for the old FRC Driver Station. For the new 2027 Driver Station, use the `Gamepad` class, which has universal mappings for anything that shows up as a Gamepad in the Driver Station.
 
