@@ -18,7 +18,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 ### Tooling
 
-[2027 Alpha 5 WPILib Installer]( https://packages.wpilib.workers.dev/installer/v2027.0.0-alpha-5/)
+[2027 Alpha 6 WPILib Installer](https://github.com/wpilibsuite/allwpilib/releases/tag/v2027.0.0-alpha-6)
 
 [Limelight Hardware Manager 2.0.7 - WINDOWS](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_7.exe)
 
@@ -54,7 +54,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 #### Third Party Library Compatibility by WPILib Version
 
-| Library | WPILib v2027.0.0-alpha-2 | WPILib v2027.0.0-alpha-5 |
+| Library | WPILib v2027.0.0-alpha-2 | WPILib v2027.0.0-alpha-5/6 |
 |---|---|---|
 | CTRE Phoenix 6 | 25.90.0-alpha-1 or 25.90.0-alpha-2 | :x: |
 | REVLib | v2027.0.0-alpha-1 | :x: |
