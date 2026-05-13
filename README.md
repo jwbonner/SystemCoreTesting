@@ -20,6 +20,9 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 [2027 Alpha 6 WPILib Installer](https://github.com/wpilibsuite/allwpilib/releases/tag/v2027.0.0-alpha-6)
 
+> [!TIP]
+> The year and version on the desktop icons and WPILib folder might not match the WPILib version from the installer. As of this writing, the latest WPILib is 2027.0.0-alpha-6, which installs to a 2027_alpha5 folder and shortcuts. The reason for this is complicated, but it is intended behavior. Alpha 6 will install straight over an Alpha 5 installation. In season, this will not be an issue, as the folder will just be the year by itself, this is purely an Alpha and Beta issue.
+
 [Limelight Hardware Manager 2.0.7 - WINDOWS](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_7.exe)
 
 [Limelight Hardware Manager 2.0.7 - APPLE SILICON MAC (Apple M1-M5)](https://downloads.limelightvision.io/software/LimelightHardwareManager-macOS-AppleSilicon2_0_7.dmg)
