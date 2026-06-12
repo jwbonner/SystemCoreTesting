@@ -8,12 +8,16 @@ Due to the volatile nature of versions and breaking changes, the below list is p
 
 ### WPILib to Phoenix 6 API
 
+- WPILib `2027_alpha5` compatible releases
+  - Phoenix 6 `26.50.0-alpha-1`
 - WPILib `2027_alpha1` and `2027_alpha2` compatible releases
   - Phoenix 6 `25.90.0-alpha-1`
   - Phoenix 6 `25.90.0-alpha-2`
 
 ### Phoenix 6 API to Firmware
 
+- `26.50.0-alpha-1` compatible Phoenix 6 firmware
+  - Firmware `26.X` (any 2026 firmware release)
 - `25.90.0-alpha-1` and `25.90.0-alpha-2` compatible Phoenix 6 firmware
   - Firmware `25.90.0.0`
 
@@ -23,7 +27,7 @@ It is highly recommended to explicitly pin the Python dependency in your `projec
 
 ```
 requires = [
-    "phoenix6==25.90.0a2"
+    "phoenix6==26.50.0a1"
 ]
 ```
 
@@ -46,6 +50,10 @@ public static final TalonFX m_motor = new TalonFX(0);
 
 ## Changelog
 
+### 26.50.0-alpha-1
+
+Changelog is available [here](https://api.ctr-electronics.com/changelog).
+
 ### 25.90.0-alpha-2
 
 #### Changes
@@ -62,11 +70,7 @@ public static final TalonFX m_motor = new TalonFX(0);
 
 #### Known Issues
 
-- Phoenix 5 is unavailable.
-- An offline installer is unavailable.
-- Signal logger does not rename files to include the match name when connected to FMS.
-- Tuner cannot deploy a temporary diagnostic server to the SystemCore. To use Phoenix Tuner X functionality, deploy a blank robot program with a Phoenix 6 device initialized. No other Tuner functionality is affected.
-
+Please see [known issues](https://api.ctr-electronics.com/changelog#known-issues-20260613).
 <hr/>
 
 ### 25.90.0-alpha-1
@@ -83,10 +87,8 @@ public static final TalonFX m_motor = new TalonFX(0);
 
 ## Download
 
-* Vendordep: `https://maven.ctr-electronics.com/release/com/ctre/phoenix6/latest/Phoenix6-25.90.0-alpha-2.json`
+* Vendordep: Select from the vendor JSON repository in VS code
 
-* Firmware: Tuner -> For the year dropdown select `2027-alpha-1` -> Firmware will be automatically populated
+* canivore-usb-kernel Package: https://ctre.download/files/systemcore/canivore-usb-kernel_1.18_aarch64.ipk
 
-* canivore-usb-kernel Package: https://ctre.download/files/canivore-usb-kernel_1.14_aarch64.ipk
-
-* canivore-usb Package: https://ctre.download/files/canivore-usb_1.14_aarch64.ipk
+* canivore-usb Package: https://ctre.download/files/systemcore/canivore-usb_1.16_aarch64.ipk
