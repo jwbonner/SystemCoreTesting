@@ -61,7 +61,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 | Library | WPILib v2027.0.0-alpha-2 | WPILib v2027.0.0-alpha-5/6 |
 |---|---|---|
-| CTRE Phoenix 6 | 25.90.0-alpha-1 or 25.90.0-alpha-2 | :x: |
+| CTRE Phoenix 6 | 25.90.0-alpha-1 or 25.90.0-alpha-2 | v26.50.0-alpha-1 |
 | REVLib | v2027.0.0-alpha-1 | v2027.0.0-alpha-2 |
 | ReduxLib | 2027.0.0-alpha-2 | :x: |
 | PathPlannerLib | 2027.0.0-alpha-2 | :x: |
