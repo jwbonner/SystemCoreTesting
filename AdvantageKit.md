@@ -6,12 +6,21 @@
 To install the 2027 alpha of AdvantageKit, follow the instructions in the WPILib documentation for [installing vendor libraries](https://docs.wpilib.org/en/latest/docs/software/vscode-overview/3rd-party-libraries.html#installing-libraries) and choose "AdvantageKit" from the list. Altneratively, choose "WPILib: Manage Vendor Libraries" > "Install new libraries (online)" from the command palette in VSCode and paste the URL below. **Note that only the skeleton template project is currently available for 2027 releases.**
 
 ```
-https://github.com/Mechanical-Advantage/AdvantageKit/releases/download/v27.0.0-alpha-5/AdvantageKit.json
+https://github.com/Mechanical-Advantage/AdvantageKit/releases/download/v27.0.0-alpha-6/AdvantageKit.json
 ```
 
 Zip files for offline installation are attached to each GitHub release (linked below).
 
 ## Changelog
+
+### [v27.0.0-alpha-6](https://github.com/Mechanical-Advantage/AdvantageKit/releases/tag/v27.0.0-alpha-6)
+
+- **Compatibility: WPILib 2027.0.0-alpha-7, Systemcore alpha/beta 14**
+- Fixed log replay for WPILOGs with nanosecond timestamps ([#278](https://github.com/Mechanical-Advantage/AdvantageKit/issues/278))
+- Added support for Windows arm64
+- Added "mutable" NetworkTables property when publishing data
+- Enabled code signing for native libraries on macOS and Windows
+- Removed deprecated Spotless option in template projects
 
 ### [v27.0.0-alpha-5](https://github.com/Mechanical-Advantage/AdvantageKit/releases/tag/v27.0.0-alpha-5)
 

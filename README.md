@@ -74,7 +74,7 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 | ReduxLib | v2027.0.0-alpha-2 | v2027.0.0-alpha-6 | v2027.0.0-alpha-7 |
 | PathPlannerLib | 2027.0.0-alpha-2 | v2027.0.0-alpha-3 | :x: |
 | ChoreoLib | 2027.0.0-alpha-1 | :x: | v2027.0.0-alpha-3 |
-| AdvantageKit | v27.0.0-alpha-3 | v27.0.0-alpha-4 | v27.0.0-alpha-5 |
+| AdvantageKit | v27.0.0-alpha-3 | v27.0.0-alpha-4 | v27.0.0-alpha-5 or v27.0.0-alpha-6 |
 | ThriftyLib | :x: | v2027.0.0-alpha-1 | :x: |
 | LimelightLib2 | LimelightHelpers | [LimelightLib-alpha-5-6](https://limelightvision.github.io/limelightlib-public/LimelightLib-alpha5-6.json) | [LimelightLib-alpha7](https://limelightvision.github.io/limelightlib-public/LimelightLib-alpha7.json) |
 
