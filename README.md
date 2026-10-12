@@ -77,7 +77,7 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 | PhotonLib | 2027.0.0-alpha-2 | :x: | latest dev release |
 | ChoreoLib | 2027.0.0-alpha-1 | :x: | v2027.0.0-alpha-3 |
 | AdvantageKit | v27.0.0-alpha-3 | v27.0.0-alpha-4 | v27.0.0-alpha-5 or v27.0.0-alpha-6 |
-| ThriftyLib | :x: | v2027.0.0-alpha-1 | :x: |
+| ThriftyLib | :x: | v2027.0.0-alpha-1 | 2027.0.0-alpha-5 |
 | LimelightLib2 | LimelightHelpers | [LimelightLib-alpha-5-6](https://limelightvision.github.io/limelightlib-public/LimelightLib-alpha5-6.json) | [LimelightLib-alpha7](https://limelightvision.github.io/limelightlib-public/LimelightLib-alpha7.json) |
 
 - :x: — No compatible release currently available for this WPILib version.
