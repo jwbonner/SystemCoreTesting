@@ -8,7 +8,7 @@ To use the 2027 Beta, use following URL:
 
 **Vendor JSON URL:**
 ```
-https://docs.home.thethriftybot.com/software/thriftylib/ThriftyLib-2027-2027.0.0-alpha-1.json
+https://software.thethriftybot.com/frcvendor/ThriftyLib-2027.json
 ```
 
 ### Migration Guide (v2026 → v2027)
