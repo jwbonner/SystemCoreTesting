@@ -35,7 +35,7 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 - Limelight Hardware Manager 2.0.12 - [Windows](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_12.exe) | [macOS (Apple Silicon)](https://downloads.limelightvision.io/software/LimelightHardwareManager-macOS-AppleSilicon2_0_12.dmg) | [macOS (Intel)](https://downloads.limelightvision.io/software/LimelightHardwareManager-macOS-Intel2_0_12.dmg) | [Linux x86_64 AppImage](https://downloads.limelightvision.io/software/LimelightHardwareManager-x86_64_2_0_12.AppImage.zip) | [Linux ARM64 AppImage BETA](https://downloads.limelightvision.io/software/LimelightHardwareManager-aarch64_2_0_12.AppImage.zip)
 
 > [!TIP]
-> The year and version on the desktop icons and WPILib folder might not match the WPILib version from the installer. As of this writing, the latest WPILib is 2027.0.0-alpha-6, which installs to a 2027_alpha5 folder and shortcuts. The reason for this is complicated, but it is intended behavior. Alpha 6 will install straight over an Alpha 5 installation. In season, this will not be an issue, as the folder will just be the year by itself, this is purely an Alpha and Beta issue.
+> The year and version on the desktop icons and WPILib folder might not match the WPILib version from the installer. As of this writing, the latest WPILib is 2027.0.0-alpha-7, which installs to a 2027_alpha7 folder and shortcuts. The reason for this is complicated, but it is intended behavior. Alpha 7 will install side by side with an Alpha 6 installation. In season, this will not be an issue, as the folder will just be the year by itself, this is purely an Alpha and Beta issue.
 
 ### Vendor Libraries
 
@@ -155,7 +155,7 @@ For Beta units, hold down the Config button while powering the unit with USB con
 
 1. Boot and establish connectivity with your Systemcore
 2. Ensure WPILib 2027 has been installed
-3. Open '2027_alpha5 WPILib VS Code'
+3. Open '2027_alpha7 WPILib VS Code'
 4. Make a new WPILib project as you normally would, and make sure to set the correct team number during the project creation step
 5. Deploy the project as you normally would
 6. The Driver Station should reflect the presence of robot code:
