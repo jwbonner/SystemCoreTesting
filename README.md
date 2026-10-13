@@ -13,6 +13,7 @@ Note that all updated documentation for 2027 WPILib changes, new features, etc. 
 
 [A301 Details](A301.md)
 
+
 ## Alpha vs Beta Systemcore units
 
 Systemcore units originally shipped to teams during the initial FRC Alpha test are Alpha Systemcore units.  Units shipped to FTC Alpha testing teams are Beta Systemcore units.
@@ -84,6 +85,13 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 | YAGSL | :x: | :x: | 2026.10.09 |
 
 - :x: — No compatible release currently available for this WPILib version.
+
+## Known Issues:
+
+| Issue | Affects Alpha Units | Affects Beta Units |  Affects SoCal Units | Affect Production Units
+|---|---|---|---|---|
+| Unreliable USB 3 Drive Mounting / USB 3 Instability | Yes | Yes | No | No
+| Analog Input Values Gradually Rise | Yes | No | No | No
 
 ## Systemcore Quick Start
 
