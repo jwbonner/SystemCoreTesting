@@ -29,13 +29,13 @@ Commands v3 (`org.wpilib.command3`, Java only):
 https://cdn.yassrobotics.com/yams_commands3.json
 ```
 
-These always point at the latest release. The latest release for WPILib v2027.0.0-alpha-7 is [v2026.10.09](https://github.com/Yet-Another-Software-Suite/YAMS/releases/tag/v2026.10.09); to pin it, use [yams_commands2-2026.10.09.json](https://cdn.yassrobotics.com/yams_commands2-2026.10.09.json) or [yams_commands3-2026.10.09.json](https://cdn.yassrobotics.com/yams_commands3-2026.10.09.json).
+These always point at the latest release. The latest release for WPILib v2027.0.0-alpha-7 is [v2026.10.15](https://github.com/Yet-Another-Software-Suite/YAMS/releases/tag/v2026.10.15); to pin it, use [yams_commands2-2026.10.15.json](https://cdn.yassrobotics.com/yams_commands2-2026.10.15.json) or [yams_commands3-2026.10.15.json](https://cdn.yassrobotics.com/yams_commands3-2026.10.15.json).
 
 Example robot projects for both frameworks are in [examples/commands2](https://github.com/Yet-Another-Software-Suite/YAMS/tree/master/examples/commands2) and [examples/commands3](https://github.com/Yet-Another-Software-Suite/YAMS/tree/master/examples/commands3).
 
 ### Thrifty Nova
 
-YAMS v2026.10.09 supports The Thrifty Bot's Thrifty Nova motor controller through `NovaWrapper` (`yams.core.motorcontrollers.local.NovaWrapper` in Java, `yams::motorcontrollers::local::NovaWrapper` in C++), built on ThriftyLib 2027.0.0-alpha-5. To use Novas, also install the ThriftyLib vendordep:
+YAMS supports The Thrifty Bot's Thrifty Nova motor controller through `NovaWrapper` (`yams.core.motorcontrollers.local.NovaWrapper` in Java, `yams::motorcontrollers::local::NovaWrapper` in C++), built on ThriftyLib 2027.0.0-alpha-5. To use Novas, also install the ThriftyLib vendordep:
 
 ```
 https://software.thethriftybot.com/frcvendor/ThriftyLib-2027.json
@@ -111,6 +111,16 @@ config.withIdleMode(MotorMode.BRAKE);
 import yams.core.motorcontrollers.enums.MotorMode;
 config.withZeroPower(MotorMode.BRAKE);
 ```
+
+#### Updating from YAMS v2026.10.09
+
+If you already moved to YAMS 2027, see [Updating from v2026.10.09 to v2026.10.15](https://github.com/Yet-Another-Software-Suite/YAMS/blob/master/MIGRATION.md#updating-from-v20261009-to-v20261015) for everything that changed. The changes most likely to affect you:
+
+- `EasyCRTConfig` is removed. `EasyCRT` takes the three tooth counts and solves the two readings: `new EasyCRT(100, 19, 21).solve(encoderA, encoderB)`.
+- An `ArmFeedforward`'s kV and kA are per rotation on the Systemcore closed loop too, as they already were on the Talons and SPARKs. If you tuned an arm's kV or kA on a Thrifty Nova, multiply them by 2π.
+- `withTemperatureCutoff(...)` is only accepted where the Systemcore closed loop checks it: with an exponential profile or LQR on a SPARK, and with LQR on a TalonFX or TalonFXS.
+- `SwerveModule.lock(...)` is renamed to `setAzimuthAngle(...)`.
+- Simulated SPARKs now follow their trapezoidal profile and feedforward. REVLib's simulation does not run MAXMotion, so YAMS runs the profile on the Systemcore in simulation and still uses MAXMotion on the robot (see [#425](https://github.com/wpilibsuite/SystemcoreTesting/issues/425)).
 
 #### Live Tuning is opt-in
 
