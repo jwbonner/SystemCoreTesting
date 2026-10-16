@@ -120,7 +120,6 @@ If you already moved to YAMS 2027, see [Updating from v2026.10.09 to v2026.10.15
 - An `ArmFeedforward`'s kV and kA are per rotation on the Systemcore closed loop too, as they already were on the Talons and SPARKs. If you tuned an arm's kV or kA on a Thrifty Nova, multiply them by 2π.
 - `withTemperatureCutoff(...)` is only accepted where the Systemcore closed loop checks it: with an exponential profile or LQR on a SPARK, and with LQR on a TalonFX or TalonFXS.
 - `SwerveModule.lock(...)` is renamed to `setAzimuthAngle(...)`.
-- Simulated SPARKs now follow their trapezoidal profile and feedforward. REVLib's simulation does not run MAXMotion, so YAMS runs the profile on the Systemcore in simulation and still uses MAXMotion on the robot (see [#425](https://github.com/wpilibsuite/SystemcoreTesting/issues/425)).
 
 #### Live Tuning is opt-in
 
