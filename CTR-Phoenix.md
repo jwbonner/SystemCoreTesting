@@ -44,6 +44,7 @@ requires = [
 
 * canivore-usb Package
   * WPILib `2027_alpha7`
+    * Any 17: [canivore-usb_1.18_systemcoreos_alphabeta_17](https://ctre.download/files/systemcore/canivore-usb_1.18_systemcoreos_alphabeta_17.ipk)
     * Beta 14 / Any 15: [canivore-usb_1.18_systemcoreos_beta_14](https://ctre.download/files/systemcore/canivore-usb_1.18_systemcoreos_beta_14.ipk)
     * Alpha 14: [canivore-usb_1.18_systemcoreos_alpha_14](https://ctre.download/files/systemcore/canivore-usb_1.18_systemcoreos_alpha_14.ipk)
     * Starting in this release, only one IPK is necessary for the CANivore
