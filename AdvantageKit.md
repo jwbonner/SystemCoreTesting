@@ -6,7 +6,7 @@
 To install the 2027 alpha of AdvantageKit, follow the instructions in the WPILib documentation for [installing vendor libraries](https://docs.wpilib.org/en/latest/docs/software/vscode-overview/3rd-party-libraries.html#installing-libraries) and choose "AdvantageKit" from the list. Altneratively, choose "WPILib: Manage Vendor Libraries" > "Install new libraries (online)" from the command palette in VSCode and paste the URL below. **Note that only the skeleton template project is currently available for 2027 releases.**
 
 ```
-https://github.com/Mechanical-Advantage/AdvantageKit/releases/download/v27.0.0-alpha-6/AdvantageKit.json
+https://github.com/Mechanical-Advantage/AdvantageKit/releases/download/v27.0.0-alpha-7/AdvantageKit.json
 ```
 
 Zip files for offline installation are attached to each GitHub release (linked below).
