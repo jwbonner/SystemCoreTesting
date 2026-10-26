@@ -13,7 +13,7 @@ https://software-metadata.revrobotics.com/REVLib-2027.json
 
 [Offline Install](https://github.com/REVrobotics/REV-Software-Binaries/releases/download/revlib-2027.0.0-alpha-7/REVLib-offline-v2027.0.0-alpha-7.zip)
 
-Refer to [WPILib Docs](https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html) about installing 3rd party libraries.
+Refer to [WPILib Docs](https://docs.wpilib.org/en/latest/docs/software/vscode-overview/3rd-party-libraries.html) about installing 3rd party libraries.
 
 > [!NOTE]
 > REVLib version requirements for A301 firmware are listed in [A301.md](A301.md).

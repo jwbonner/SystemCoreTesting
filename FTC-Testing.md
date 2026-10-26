@@ -43,10 +43,8 @@ Figure 1 - Hybrid System Block Diagram. Created with Gemini
 Power can be chained through additional Expansion Hubs if needed before ending with Systemcore, though it is recommended to start with a single Expansion Hub to keep things simple while working on initial bring-up of the system. Additional Expansion Hubs would each connect to a unique Systemcore USB port for data transfer.
 
 #### WPILib Installation
-The Systemcore control system will use WPILib as the base library infrastructure across both FTC and FRC. WPILib and its dedicated copy of the VSCode IDE can be installed on Windows, Mac or Linux. Download the latest alpha release using the link in the [Tooling section of the Readme on this repo](https://github.com/wpilibsuite/SystemcoreTesting#tooling) then intall using [these instructions](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html).
+The Systemcore control system will use WPILib as the base library infrastructure across both FTC and FRC. WPILib and its dedicated copy of the VSCode IDE can be installed on Windows, Mac or Linux. Download the latest alpha release using the link in the [Tooling section of the Readme on this repo](https://github.com/wpilibsuite/SystemcoreTesting#tooling) then intall using [these instructions](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-2/wpilib-setup.html).
 
-> [!TIP]
-> The year and version on the desktop icons and WPILib folder might not match the WPILib version from the installer. As of this writing, the latest WPILib is 2027.0.0-alpha-6, which installs to a 2027_alpha5 folder and shortcuts. The reason for this is complicated, but it is intended behavior. Alpha 6 will install straight over an Alpha 5 installation. In season, this will not be an issue, as the folder will just be the year by itself; this is purely an Alpha and Beta issue.
 
 #### Systemcore Configuration
 1. Download and install the Limelight Hardware Manager for your platform from the appropriate [link on the GitHub page](https://github.com/wpilibsuite/SystemcoreTesting/tree/main#tooling)
@@ -70,8 +68,8 @@ You may also wish to disconnect the USB and connect to the Systemcore Wifi to ve
 #### First example program
 We’ll be working on resources for understanding WPILib and differences with the FTC SDK shortly, but first we want to deploy a simple sample program to verify that everything is configured and wired correctly.
 
-1. Follow the directions [on this page](https://docs.wpilib.org/en/2027/docs/zero-to-robot/step-4/creating-test-drivetrain-program-cpp-java-python.html#deploying-the-project-to-a-robot) to create your sample program, with the exception of selecting Expansion Hub Sample instead of Getting Started and stopping once you have the project open. The rest of the page describes the Getting Started sample program and is not applicable to this test.
-2. Once you’ve created and opened the project, use [these instructions](https://docs.wpilib.org/en/2027/docs/software/vscode-overview/deploying-robot-code.html#building-and-deploying-robot-code) to deploy the project.
+1. Follow the directions [on this page](https://docs.wpilib.org/en/latest/docs/zero-to-robot/step-4/creating-test-drivetrain-program-cpp-java-python.html#deploying-the-project-to-a-robot) to create your sample program, with the exception of selecting Expansion Hub Sample instead of Getting Started and stopping once you have the project open. The rest of the page describes the Getting Started sample program and is not applicable to this test.
+2. Once you’ve created and opened the project, use [these instructions](https://docs.wpilib.org/en/latest/docs/software/vscode-overview/deploying-robot-code.html#building-and-deploying-robot-code) to deploy the project.
 3. The program is set up to map each joystick axis (i.e. left stick X/Y + right stick X/Y) to one of the 4 motors on the Expansion Hub to test basic functionality.
 4. Open the Driver Station software, ensure your gamepad is detected by clicking the controller tab on the left side, set the mode to Teleop and click Enable.
 5. Each of the 4 joystick axes should control one of the 4 motor outputs of the Expansion Hub.

@@ -2,7 +2,7 @@
 
 This repository is for Alpha and Beta testing of the Systemcore, Motioncore, and A301.
 
-Note that all updated documentation for 2027 WPILib changes, new features, etc. can be found on the '2027' version of the WPILib Docs site: https://docs.wpilib.org/en/2027/
+Note that all updated documentation for 2027 WPILib changes, new features, etc. can be found on the '2027' version of the WPILib Docs site: https://docs.wpilib.org/en/latest/
 
 > [!IMPORTANT]
 > Software posted here is Alpha software, and is not compatible with the Control Hub or roboRIO.
@@ -30,13 +30,11 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 
 ### Tooling
 
-- [2027 Alpha 7 WPILib Installer](https://github.com/wpilibsuite/allwpilib/releases/tag/v2027.0.0-alpha-7)
+- [2027 Alpha 8 WPILib Installer](https://github.com/wpilibsuite/allwpilib/releases/tag/v2027.0.0-alpha-8)
 - [2027 Driver Station](https://github.com/wpilibsuite/FirstDriverStation-Public)
 - [OS Releases, Toolchain, Package Examples, Cross-Compilation Examples](https://github.com/LimelightVision/systemcore-os-public)
 - Limelight Hardware Manager 2.0.13 - [Windows](https://downloads.limelightvision.io/software/LimelightHardwareManagerSetup2_0_13.exe) | [macOS (Apple Silicon)](https://downloads.limelightvision.io/software/LimelightHardwareManager-macOS-AppleSilicon2_0_13.dmg) | [macOS (Intel)](https://downloads.limelightvision.io/software/LimelightHardwareManager-macOS-Intel2_0_13.dmg) | [Linux x86_64 AppImage](https://downloads.limelightvision.io/software/LimelightHardwareManager-x86_64_2_0_13.AppImage.zip) | [Linux ARM64 AppImage BETA](https://downloads.limelightvision.io/software/LimelightHardwareManager-aarch64_2_0_13.AppImage.zip)
 
-> [!TIP]
-> The year and version on the desktop icons and WPILib folder might not match the WPILib version from the installer. As of this writing, the latest WPILib is 2027.0.0-alpha-7, which installs to a 2027_alpha7 folder and shortcuts. The reason for this is complicated, but it is intended behavior. Alpha 7 will install side by side with an Alpha 6 installation. In season, this will not be an issue, as the folder will just be the year by itself, this is purely an Alpha and Beta issue.
 
 ### Vendor Libraries
 
@@ -61,7 +59,7 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 |---:|---|---|---|
 | <= 9 | v2027.0.0-alpha-1 or v2027.0.0-alpha-2 | Compatible | Not compatible |
 |10-13 |  v2027.0.0-alpha-5/6 | Compatible\* | Compatible |
-| >= 14 | >= v2027.0.0-alpha-7 | Compatible\* | Compatible |
+| >= 14 | >= v2027.0.0-alpha-7/8 | Compatible\* | Compatible |
 
 \* The NI Driver Station will continue to function with all currently released Systemcore images. Some newer Driver Station features (for example, OpMode selection and Alerts) are only available in the 2027 Driver Station and require Systemcore images >= 10 and WPILib >= v2027.0.0-alpha-5.
 
@@ -70,7 +68,7 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 
 #### Third Party Library Compatibility by WPILib Version
 
-| Library | WPILib v2027.0.0-alpha-2 | WPILib v2027.0.0-alpha-5/6 |  WPILib v2027.0.0-alpha-7
+| Library | WPILib v2027.0.0-alpha-2 | WPILib v2027.0.0-alpha-5/6 |  WPILib v2027.0.0-alpha-7/8
 |---|---|---|---|
 | CTRE Phoenix 6 | 25.90.0-alpha-1 or 25.90.0-alpha-2 | v26.50.0-alpha-1 | v26.70.0-alpha-2 |
 | REVLib | v2027.0.0-alpha-1 | v2027.0.0-alpha-2 | v2027.0.0-alpha-7 |
@@ -166,7 +164,7 @@ For Beta units, hold down the Config button while powering the unit with USB con
 
 1. Boot and establish connectivity with your Systemcore
 2. Ensure WPILib 2027 has been installed
-3. Open '2027_alpha7 WPILib VS Code'
+3. Open '2027_alpha8 WPILib VS Code'
 4. Make a new WPILib project as you normally would, and make sure to set the correct team number during the project creation step
 5. Deploy the project as you normally would
 6. The Driver Station should reflect the presence of robot code:
@@ -187,7 +185,7 @@ See [RobotPy specific notes](robotpy.md)
 3. Click the "Add Package" card.
 4. Install one package at a time.
 5. Click the new "Elastic" or "AdvantageScope Lite" launch cards.
-6. Use Elastic and AdvantageScope as you normally would. A quick way to add live telemetry to your robot is the use of the SmartDashboard API (subject to change soon) ```SmartDashboard.putNumber("key",value);```.
+6. Use Elastic and AdvantageScope as you normally would. A quick way to add live telemetry to your robot is the use of the Telemetry API ```Telemetry.log("key",value);```.
 
 > [!NOTE]
 > Elastic and AdvantageScope Lite packages will soon be pre-baked into the OS.
