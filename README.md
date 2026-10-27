@@ -90,6 +90,9 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 |---|---|---|---|---|
 | Unreliable USB 3 Drive Mounting / USB 3 Instability | Yes | Yes | No | No
 | Analog Input Values Gradually Rise | Yes | No | No | No
+| Risk of stuck eMMC | Maybe | Maybe | Yes | No
+
+https://docs.limelightvision.io/reports/systemcore-beta-emmc-failure
 
 ## Systemcore Quick Start
 
