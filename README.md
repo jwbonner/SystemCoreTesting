@@ -94,6 +94,8 @@ Systemcore units originally shipped to teams during the initial FRC Alpha test a
 
 https://docs.limelightvision.io/reports/systemcore-beta-emmc-failure
 
+https://docs.limelightvision.io/reports/systemcore-beta-lockup
+
 ## Systemcore Quick Start
 
 |  |  |
