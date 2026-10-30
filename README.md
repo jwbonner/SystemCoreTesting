@@ -97,17 +97,19 @@ https://docs.limelightvision.io/reports/systemcore-beta-emmc-failure
 ## Systemcore Quick Start
 
 |  |  |
-|------------------------------------------|-----------------|
-| Built-in Wi-Fi Access Point SSID         | `SYSTEMCORE`    |
-| Built-in Wi-Fi Access Point Password     | `PASSWORD`      |
-| Systemcore Wi-Fi Access Point IP         | `172.30.0.1`    |
-| Systemcore USB IP (Windows)              | `172.26.0.1` (`172.28.0.1` for images 9 and before) |
-| Systemcore USB IP (Linux, Mac)           | `172.27.0.1` (`172.29.0.1` for images 9 and before) |
-| Systemcore Ethernet IP                   | Check display   |
-| Default User                             | `systemcore`    |
-| Default Password                         | `systemcore`    |
-| Default Mount Locations for USB Storage  | `/U`, `/V`, etc |
-| CAN Bus Interface Names                  | `can_s0` through `can_s4` for Systemcore, `can_d0` through `can_d19` for Motioncore |
+|-----------------------------------------------------|-----------------------|
+| Built-in Wi-Fi Access Point SSID (pre image 17)     | `SYSTEMCORE`          |
+| Built-in Wi-Fi Access Point Password (pre image 17) | `PASSWORD`            |
+| Built-in Wi-Fi Access Point SSID (image 17+)        | `SYSTEMCORE-[RANDOM]` |
+| Built-in Wi-Fi Access Point Password (image 17+)    | Check display         |
+| Systemcore Wi-Fi Access Point IP                    | `172.30.0.1`          |
+| Systemcore USB IP (Windows)                         | `172.26.0.1`          |
+| Systemcore USB IP (Linux, Mac)                      | `172.27.0.1`          |
+| Systemcore Ethernet IP                              | Check display         |
+| Default User                                        | `systemcore`          |
+| Default Password                                    | `systemcore`          |
+| Default Mount Locations for USB Storage             | `/U`, `/V`, etc       |
+| CAN Bus Interface Names                             | `can_s0` through `can_s4` for Systemcore, `can_d0` through `can_d19` for Motioncore |
 
 ### Powering On
 
